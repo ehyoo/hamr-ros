@@ -240,6 +240,253 @@ gtest_main/fast:
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+#=============================================================================
+# Target rules for targets named _hamr_test_generate_messages_check_deps_HamrCommand
+
+# Build rule for target.
+_hamr_test_generate_messages_check_deps_HamrCommand: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hamr_test_generate_messages_check_deps_HamrCommand
+.PHONY : _hamr_test_generate_messages_check_deps_HamrCommand
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_HamrCommand/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_HamrCommand/fast
+
+#=============================================================================
+# Target rules for targets named _hamr_test_generate_messages_check_deps_HamrStatus
+
+# Build rule for target.
+_hamr_test_generate_messages_check_deps_HamrStatus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hamr_test_generate_messages_check_deps_HamrStatus
+.PHONY : _hamr_test_generate_messages_check_deps_HamrStatus
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_HamrStatus/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_HamrStatus/fast
+
+#=============================================================================
+# Target rules for targets named _hamr_test_generate_messages_check_deps_MotorStatus
+
+# Build rule for target.
+_hamr_test_generate_messages_check_deps_MotorStatus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hamr_test_generate_messages_check_deps_MotorStatus
+.PHONY : _hamr_test_generate_messages_check_deps_MotorStatus
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_MotorStatus/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_MotorStatus/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_gencpp
+
+# Build rule for target.
+hamr_test_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_gencpp
+.PHONY : hamr_test_gencpp
+
+# fast build rule for target.
+hamr_test_gencpp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_gencpp.dir/build.make hamr_test/CMakeFiles/hamr_test_gencpp.dir/build
+.PHONY : hamr_test_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_generate_messages
+
+# Build rule for target.
+hamr_test_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_generate_messages
+.PHONY : hamr_test_generate_messages
+
+# fast build rule for target.
+hamr_test_generate_messages/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages.dir/build
+.PHONY : hamr_test_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_generate_messages_cpp
+
+# Build rule for target.
+hamr_test_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_generate_messages_cpp
+.PHONY : hamr_test_generate_messages_cpp
+
+# fast build rule for target.
+hamr_test_generate_messages_cpp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build
+.PHONY : hamr_test_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_generate_messages_lisp
+
+# Build rule for target.
+hamr_test_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_generate_messages_lisp
+.PHONY : hamr_test_generate_messages_lisp
+
+# fast build rule for target.
+hamr_test_generate_messages_lisp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build
+.PHONY : hamr_test_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_generate_messages_py
+
+# Build rule for target.
+hamr_test_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_generate_messages_py
+.PHONY : hamr_test_generate_messages_py
+
+# fast build rule for target.
+hamr_test_generate_messages_py/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build
+.PHONY : hamr_test_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_genlisp
+
+# Build rule for target.
+hamr_test_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_genlisp
+.PHONY : hamr_test_genlisp
+
+# fast build rule for target.
+hamr_test_genlisp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genlisp.dir/build.make hamr_test/CMakeFiles/hamr_test_genlisp.dir/build
+.PHONY : hamr_test_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named hamr_test_genpy
+
+# Build rule for target.
+hamr_test_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_test_genpy
+.PHONY : hamr_test_genpy
+
+# fast build rule for target.
+hamr_test_genpy/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genpy.dir/build.make hamr_test/CMakeFiles/hamr_test_genpy.dir/build
+.PHONY : hamr_test_genpy/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -260,6 +507,25 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... _hamr_test_generate_messages_check_deps_HamrCommand"
+	@echo "... _hamr_test_generate_messages_check_deps_HamrStatus"
+	@echo "... _hamr_test_generate_messages_check_deps_MotorStatus"
+	@echo "... hamr_test_gencpp"
+	@echo "... hamr_test_generate_messages"
+	@echo "... hamr_test_generate_messages_cpp"
+	@echo "... hamr_test_generate_messages_lisp"
+	@echo "... hamr_test_generate_messages_py"
+	@echo "... hamr_test_genlisp"
+	@echo "... hamr_test_genpy"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 .PHONY : help
 
 

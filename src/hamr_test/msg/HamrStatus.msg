@@ -1,0 +1,4 @@
+time timestamp
+hamr_test/MotorStatus left_motor
+hamr_test/MotorStatus right_motor
+hamr_test/MotorStatus turret_motor

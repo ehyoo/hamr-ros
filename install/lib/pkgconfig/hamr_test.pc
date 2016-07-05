@@ -1,0 +1,8 @@
+prefix=/home/modlab/Documents/hamr-ros/install
+
+Name: hamr_test
+Description: Description of hamr_test
+Version: 0.0.0
+Cflags: -I/home/modlab/Documents/hamr-ros/install/include
+Libs: -L/home/modlab/Documents/hamr-ros/install/lib 
+Requires: message_runtime

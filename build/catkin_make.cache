@@ -1,2 +1,2 @@
-
+hamr_test
 -DCATKIN_DEVEL_PREFIX=/home/modlab/Documents/hamr-ros/devel -DCMAKE_INSTALL_PREFIX=/home/modlab/Documents/hamr-ros/install -G Unix Makefiles

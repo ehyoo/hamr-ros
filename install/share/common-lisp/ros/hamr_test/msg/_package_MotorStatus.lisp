@@ -3,4 +3,6 @@
           POSITION
           VELOCITY-VAL
           VELOCITY
+          DESIRED_VELOCITY-VAL
+          DESIRED_VELOCITY
 ))

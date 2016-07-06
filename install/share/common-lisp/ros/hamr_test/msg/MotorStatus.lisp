@@ -16,6 +16,11 @@
     :reader velocity
     :initarg :velocity
     :type cl:fixnum
+    :initform 0)
+   (desired_velocity
+    :reader desired_velocity
+    :initarg :desired_velocity
+    :type cl:fixnum
     :initform 0))
 )
 
@@ -36,11 +41,20 @@
 (cl:defmethod velocity-val ((m <MotorStatus>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader hamr_test-msg:velocity-val is deprecated.  Use hamr_test-msg:velocity instead.")
   (velocity m))
+
+(cl:ensure-generic-function 'desired_velocity-val :lambda-list '(m))
+(cl:defmethod desired_velocity-val ((m <MotorStatus>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader hamr_test-msg:desired_velocity-val is deprecated.  Use hamr_test-msg:desired_velocity instead.")
+  (desired_velocity m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <MotorStatus>) ostream)
   "Serializes a message object of type '<MotorStatus>"
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'position)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'position)) ostream)
   (cl:let* ((signed (cl:slot-value msg 'velocity)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 65536) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    )
+  (cl:let* ((signed (cl:slot-value msg 'desired_velocity)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 65536) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
     )
@@ -53,6 +67,10 @@
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
       (cl:setf (cl:slot-value msg 'velocity) (cl:if (cl:< unsigned 32768) unsigned (cl:- unsigned 65536))))
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'desired_velocity) (cl:if (cl:< unsigned 32768) unsigned (cl:- unsigned 65536))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<MotorStatus>)))
@@ -63,18 +81,19 @@
   "hamr_test/MotorStatus")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorStatus>)))
   "Returns md5sum for a message object of type '<MotorStatus>"
-  "a6c099635985a581418ba26a6e42fccc")
+  "dbceefd30efff8798b9f236b068c1e43")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorStatus)))
   "Returns md5sum for a message object of type 'MotorStatus"
-  "a6c099635985a581418ba26a6e42fccc")
+  "dbceefd30efff8798b9f236b068c1e43")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorStatus>)))
   "Returns full string definition for message of type '<MotorStatus>"
-  (cl:format cl:nil "uint16 position~%int16 velocity~%~%"))
+  (cl:format cl:nil "uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'MotorStatus)))
   "Returns full string definition for message of type 'MotorStatus"
-  (cl:format cl:nil "uint16 position~%int16 velocity~%~%"))
+  (cl:format cl:nil "uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <MotorStatus>))
   (cl:+ 0
+     2
      2
      2
 ))
@@ -83,4 +102,5 @@
   (cl:list 'MotorStatus
     (cl:cons ':position (position msg))
     (cl:cons ':velocity (velocity msg))
+    (cl:cons ':desired_velocity (desired_velocity msg))
 ))

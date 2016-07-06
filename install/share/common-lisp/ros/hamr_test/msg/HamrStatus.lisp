@@ -97,16 +97,16 @@
   "hamr_test/HamrStatus")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<HamrStatus>)))
   "Returns md5sum for a message object of type '<HamrStatus>"
-  "d296d6b9f7c44d7293d5ed1a212a9dff")
+  "0a16597238e260f74664b5e3f3a62748")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'HamrStatus)))
   "Returns md5sum for a message object of type 'HamrStatus"
-  "d296d6b9f7c44d7293d5ed1a212a9dff")
+  "0a16597238e260f74664b5e3f3a62748")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<HamrStatus>)))
   "Returns full string definition for message of type '<HamrStatus>"
-  (cl:format cl:nil "time timestamp~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%~%"))
+  (cl:format cl:nil "time timestamp~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'HamrStatus)))
   "Returns full string definition for message of type 'HamrStatus"
-  (cl:format cl:nil "time timestamp~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%~%"))
+  (cl:format cl:nil "time timestamp~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <HamrStatus>))
   (cl:+ 0
      8

@@ -58,8 +58,16 @@ def talker():
     msg = HamrCommand()
 
     while not rospy.is_shutdown():
-        type_msg = raw_input('What value would you like to write to l/r motor?\n')
-        msg.type = ord(val_map.get('SIG_R_MOTOR'))
+        which_motor = raw_input('Which one? R, L, T')
+        if which_motor == 'R':
+            msg.type = ord(val_map.get('SIG_R_MOTOR'))
+        elif which_motor == 'L':
+            msg.type = ord(val_map.get('SIG_L_MOTOR'))
+        elif which_motor == 'T':
+            msg.type = ord(val_map.get('SIG_T_MOTOR'))
+        else:
+            print "will write to right motor"
+            msg.type = ord(val_map.get('SIG_R_MOTOR'))
         val_msg = raw_input('What amount?\n')
         msg.val = val_msg
         pub.publish(msg)

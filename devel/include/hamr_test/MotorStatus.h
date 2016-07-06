@@ -25,11 +25,13 @@ struct MotorStatus_
 
   MotorStatus_()
     : position(0)
-    , velocity(0)  {
+    , velocity(0)
+    , desired_velocity(0)  {
     }
   MotorStatus_(const ContainerAllocator& _alloc)
     : position(0)
-    , velocity(0)  {
+    , velocity(0)
+    , desired_velocity(0)  {
   (void)_alloc;
     }
 
@@ -40,6 +42,9 @@ struct MotorStatus_
 
    typedef int16_t _velocity_type;
   _velocity_type velocity;
+
+   typedef int16_t _desired_velocity_type;
+  _desired_velocity_type desired_velocity;
 
 
 
@@ -118,12 +123,12 @@ struct MD5Sum< ::hamr_test::MotorStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "a6c099635985a581418ba26a6e42fccc";
+    return "dbceefd30efff8798b9f236b068c1e43";
   }
 
   static const char* value(const ::hamr_test::MotorStatus_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xa6c099635985a581ULL;
-  static const uint64_t static_value2 = 0x418ba26a6e42fcccULL;
+  static const uint64_t static_value1 = 0xdbceefd30efff879ULL;
+  static const uint64_t static_value2 = 0x8b9f236b068c1e43ULL;
 };
 
 template<class ContainerAllocator>
@@ -144,6 +149,7 @@ struct Definition< ::hamr_test::MotorStatus_<ContainerAllocator> >
   {
     return "uint16 position\n\
 int16 velocity\n\
+int16 desired_velocity\n\
 ";
   }
 
@@ -164,6 +170,7 @@ namespace serialization
     {
       stream.next(m.position);
       stream.next(m.velocity);
+      stream.next(m.desired_velocity);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -186,6 +193,8 @@ struct Printer< ::hamr_test::MotorStatus_<ContainerAllocator> >
     Printer<uint16_t>::stream(s, indent + "  ", v.position);
     s << indent << "velocity: ";
     Printer<int16_t>::stream(s, indent + "  ", v.velocity);
+    s << indent << "desired_velocity: ";
+    Printer<int16_t>::stream(s, indent + "  ", v.desired_velocity);
   }
 };
 

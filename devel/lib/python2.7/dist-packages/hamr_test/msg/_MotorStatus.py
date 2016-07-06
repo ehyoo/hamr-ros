@@ -7,13 +7,14 @@ import struct
 
 
 class MotorStatus(genpy.Message):
-  _md5sum = "a6c099635985a581418ba26a6e42fccc"
+  _md5sum = "dbceefd30efff8798b9f236b068c1e43"
   _type = "hamr_test/MotorStatus"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """uint16 position
-int16 velocity"""
-  __slots__ = ['position','velocity']
-  _slot_types = ['uint16','int16']
+int16 velocity
+int16 desired_velocity"""
+  __slots__ = ['position','velocity','desired_velocity']
+  _slot_types = ['uint16','int16','int16']
 
   def __init__(self, *args, **kwds):
     """
@@ -23,7 +24,7 @@ int16 velocity"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       position,velocity
+       position,velocity,desired_velocity
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -36,9 +37,12 @@ int16 velocity"""
         self.position = 0
       if self.velocity is None:
         self.velocity = 0
+      if self.desired_velocity is None:
+        self.desired_velocity = 0
     else:
       self.position = 0
       self.velocity = 0
+      self.desired_velocity = 0
 
   def _get_types(self):
     """
@@ -53,7 +57,7 @@ int16 velocity"""
     """
     try:
       _x = self
-      buff.write(_struct_Hh.pack(_x.position, _x.velocity))
+      buff.write(_struct_H2h.pack(_x.position, _x.velocity, _x.desired_velocity))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -66,8 +70,8 @@ int16 velocity"""
       end = 0
       _x = self
       start = end
-      end += 4
-      (_x.position, _x.velocity,) = _struct_Hh.unpack(str[start:end])
+      end += 6
+      (_x.position, _x.velocity, _x.desired_velocity,) = _struct_H2h.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -81,7 +85,7 @@ int16 velocity"""
     """
     try:
       _x = self
-      buff.write(_struct_Hh.pack(_x.position, _x.velocity))
+      buff.write(_struct_H2h.pack(_x.position, _x.velocity, _x.desired_velocity))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -95,11 +99,11 @@ int16 velocity"""
       end = 0
       _x = self
       start = end
-      end += 4
-      (_x.position, _x.velocity,) = _struct_Hh.unpack(str[start:end])
+      end += 6
+      (_x.position, _x.velocity, _x.desired_velocity,) = _struct_H2h.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_Hh = struct.Struct("<Hh")
+_struct_H2h = struct.Struct("<H2h")

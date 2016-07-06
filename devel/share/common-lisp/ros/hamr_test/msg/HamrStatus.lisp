@@ -12,6 +12,11 @@
     :initarg :timestamp
     :type cl:real
     :initform 0)
+   (looptime
+    :reader looptime
+    :initarg :looptime
+    :type cl:fixnum
+    :initform 0)
    (left_motor
     :reader left_motor
     :initarg :left_motor
@@ -42,6 +47,11 @@
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader hamr_test-msg:timestamp-val is deprecated.  Use hamr_test-msg:timestamp instead.")
   (timestamp m))
 
+(cl:ensure-generic-function 'looptime-val :lambda-list '(m))
+(cl:defmethod looptime-val ((m <HamrStatus>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader hamr_test-msg:looptime-val is deprecated.  Use hamr_test-msg:looptime instead.")
+  (looptime m))
+
 (cl:ensure-generic-function 'left_motor-val :lambda-list '(m))
 (cl:defmethod left_motor-val ((m <HamrStatus>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader hamr_test-msg:left_motor-val is deprecated.  Use hamr_test-msg:left_motor instead.")
@@ -68,6 +78,8 @@
     (cl:write-byte (cl:ldb (cl:byte 8 8) __nsec) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) __nsec) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) __nsec) ostream))
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'looptime)) ostream)
+  (cl:write-byte (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'looptime)) ostream)
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'left_motor) ostream)
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'right_motor) ostream)
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'turret_motor) ostream)
@@ -84,6 +96,8 @@
       (cl:setf (cl:ldb (cl:byte 8 16) __nsec) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) __nsec) (cl:read-byte istream))
       (cl:setf (cl:slot-value msg 'timestamp) (cl:+ (cl:coerce __sec 'cl:double-float) (cl:/ __nsec 1e9))))
+    (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'looptime)) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'looptime)) (cl:read-byte istream))
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'left_motor) istream)
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'right_motor) istream)
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'turret_motor) istream)
@@ -97,19 +111,20 @@
   "hamr_test/HamrStatus")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<HamrStatus>)))
   "Returns md5sum for a message object of type '<HamrStatus>"
-  "0a16597238e260f74664b5e3f3a62748")
+  "c8d041d77470a8b1b7fefe76d3b12aeb")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'HamrStatus)))
   "Returns md5sum for a message object of type 'HamrStatus"
-  "0a16597238e260f74664b5e3f3a62748")
+  "c8d041d77470a8b1b7fefe76d3b12aeb")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<HamrStatus>)))
   "Returns full string definition for message of type '<HamrStatus>"
-  (cl:format cl:nil "time timestamp~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
+  (cl:format cl:nil "time timestamp~%uint16 looptime~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'HamrStatus)))
   "Returns full string definition for message of type 'HamrStatus"
-  (cl:format cl:nil "time timestamp~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
+  (cl:format cl:nil "time timestamp~%uint16 looptime~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <HamrStatus>))
   (cl:+ 0
      8
+     2
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'left_motor))
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'right_motor))
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'turret_motor))
@@ -118,6 +133,7 @@
   "Converts a ROS message object to a list"
   (cl:list 'HamrStatus
     (cl:cons ':timestamp (timestamp msg))
+    (cl:cons ':looptime (looptime msg))
     (cl:cons ':left_motor (left_motor msg))
     (cl:cons ':right_motor (right_motor msg))
     (cl:cons ':turret_motor (turret_motor msg))

@@ -58,18 +58,56 @@ def talker():
     msg = HamrCommand()
 
     while not rospy.is_shutdown():
-        which_motor = raw_input('Which one? R, L, T')
-        if which_motor == 'R':
-            msg.type = ord(val_map.get('SIG_R_MOTOR'))
-        elif which_motor == 'L':
-            msg.type = ord(val_map.get('SIG_L_MOTOR'))
-        elif which_motor == 'T':
-            msg.type = ord(val_map.get('SIG_T_MOTOR'))
+        drive_or_pid = raw_input("Drive or PID?")
+        if drive_or_pid == 'Drive':
+            which_motor = raw_input('Which one? R, L, T')
+            if which_motor == 'R':
+                msg.type = ord(val_map.get('SIG_R_MOTOR'))
+            elif which_motor == 'L':
+                msg.type = ord(val_map.get('SIG_L_MOTOR'))
+            elif which_motor == 'T':
+                msg.type = ord(val_map.get('SIG_T_MOTOR'))
+            else:
+                print "will write to right motor"
+                msg.type = ord(val_map.get('SIG_R_MOTOR'))
+            val_msg = raw_input('What amount?\n')
+            msg.val = val_msg
         else:
-            print "will write to right motor"
-            msg.type = ord(val_map.get('SIG_R_MOTOR'))
-        val_msg = raw_input('What amount?\n')
-        msg.val = val_msg
+            which_motor = raw_input("Which motor? R, L, T\n")
+            if which_motor == 'R':
+                print 'You chose right'
+                which_val = raw_input("Which value? P, I, D\n")
+                if which_val == 'P':
+                    msg.type = ord(val_map.get('SIG_R_KP'))
+                elif which_val == 'I':
+                    msg.type = ord(val_map.get('SIG_R_KI'))
+                elif which_val == 'D':
+                    msg.type = ord(val_map.get('SIG_R_KD'))
+            elif which_motor == 'L':
+                print 'You chose left'
+                which_val = raw_input("Which value? P, I, D\n")
+                if which_val == 'P':
+                    msg.type = ord(val_map.get('SIG_L_KP'))
+                elif which_val == 'I':
+                    msg.type = ord(val_map.get('SIG_L_KI'))
+                elif which_val == 'D':
+                    msg.type = ord(val_map.get('SIG_L_KD'))
+            elif which_motor == 'T':
+                print 'You chose the turret'
+                which_val = raw_input("Which value? P, I, D\n")
+                if which_val == 'P':
+                    msg.type = ord(val_map.get('SIG_T_KP'))
+                elif which_val == 'I':
+                    msg.type = ord(val_map.get('SIG_T_KI'))
+                elif which_val == 'D':
+                    msg.type = ord(val_map.get('SIG_T_KD'))
+            elif which_motor == 'quit':
+                rospy.signal_shutdown('Node shut down')
+            else: 
+                rospy.signal_shutdown("That's not a valid option")
+                
+            val_msg = raw_input('What amount?\n')
+            msg.val = val_msg
         pub.publish(msg)
         rate.sleep()
 

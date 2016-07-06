@@ -9,10 +9,11 @@ import hamr_test.msg
 import genpy
 
 class HamrStatus(genpy.Message):
-  _md5sum = "0a16597238e260f74664b5e3f3a62748"
+  _md5sum = "c8d041d77470a8b1b7fefe76d3b12aeb"
   _type = "hamr_test/HamrStatus"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """time timestamp
+uint16 looptime
 hamr_test/MotorStatus left_motor
 hamr_test/MotorStatus right_motor
 hamr_test/MotorStatus turret_motor
@@ -21,8 +22,8 @@ MSG: hamr_test/MotorStatus
 uint16 position
 int16 velocity
 int16 desired_velocity"""
-  __slots__ = ['timestamp','left_motor','right_motor','turret_motor']
-  _slot_types = ['time','hamr_test/MotorStatus','hamr_test/MotorStatus','hamr_test/MotorStatus']
+  __slots__ = ['timestamp','looptime','left_motor','right_motor','turret_motor']
+  _slot_types = ['time','uint16','hamr_test/MotorStatus','hamr_test/MotorStatus','hamr_test/MotorStatus']
 
   def __init__(self, *args, **kwds):
     """
@@ -32,7 +33,7 @@ int16 desired_velocity"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       timestamp,left_motor,right_motor,turret_motor
+       timestamp,looptime,left_motor,right_motor,turret_motor
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -43,6 +44,8 @@ int16 desired_velocity"""
       #message fields cannot be None, assign default values for those that are
       if self.timestamp is None:
         self.timestamp = genpy.Time()
+      if self.looptime is None:
+        self.looptime = 0
       if self.left_motor is None:
         self.left_motor = hamr_test.msg.MotorStatus()
       if self.right_motor is None:
@@ -51,6 +54,7 @@ int16 desired_velocity"""
         self.turret_motor = hamr_test.msg.MotorStatus()
     else:
       self.timestamp = genpy.Time()
+      self.looptime = 0
       self.left_motor = hamr_test.msg.MotorStatus()
       self.right_motor = hamr_test.msg.MotorStatus()
       self.turret_motor = hamr_test.msg.MotorStatus()
@@ -68,7 +72,7 @@ int16 desired_velocity"""
     """
     try:
       _x = self
-      buff.write(_struct_2IH2hH2hH2h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity))
+      buff.write(_struct_2I2H2hH2hH2h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -89,8 +93,8 @@ int16 desired_velocity"""
       end = 0
       _x = self
       start = end
-      end += 26
-      (_x.timestamp.secs, _x.timestamp.nsecs, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity,) = _struct_2IH2hH2hH2h.unpack(str[start:end])
+      end += 28
+      (_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity,) = _struct_2I2H2hH2hH2h.unpack(str[start:end])
       self.timestamp.canon()
       return self
     except struct.error as e:
@@ -105,7 +109,7 @@ int16 desired_velocity"""
     """
     try:
       _x = self
-      buff.write(_struct_2IH2hH2hH2h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity))
+      buff.write(_struct_2I2H2hH2hH2h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -127,12 +131,12 @@ int16 desired_velocity"""
       end = 0
       _x = self
       start = end
-      end += 26
-      (_x.timestamp.secs, _x.timestamp.nsecs, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity,) = _struct_2IH2hH2hH2h.unpack(str[start:end])
+      end += 28
+      (_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity,) = _struct_2I2H2hH2hH2h.unpack(str[start:end])
       self.timestamp.canon()
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_2IH2hH2hH2h = struct.Struct("<2IH2hH2hH2h")
+_struct_2I2H2hH2hH2h = struct.Struct("<2I2H2hH2hH2h")

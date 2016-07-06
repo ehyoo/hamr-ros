@@ -28,12 +28,14 @@ struct HamrStatus_
 
   HamrStatus_()
     : timestamp()
+    , looptime(0)
     , left_motor()
     , right_motor()
     , turret_motor()  {
     }
   HamrStatus_(const ContainerAllocator& _alloc)
     : timestamp()
+    , looptime(0)
     , left_motor(_alloc)
     , right_motor(_alloc)
     , turret_motor(_alloc)  {
@@ -44,6 +46,9 @@ struct HamrStatus_
 
    typedef ros::Time _timestamp_type;
   _timestamp_type timestamp;
+
+   typedef uint16_t _looptime_type;
+  _looptime_type looptime;
 
    typedef  ::hamr_test::MotorStatus_<ContainerAllocator>  _left_motor_type;
   _left_motor_type left_motor;
@@ -131,12 +136,12 @@ struct MD5Sum< ::hamr_test::HamrStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "0a16597238e260f74664b5e3f3a62748";
+    return "c8d041d77470a8b1b7fefe76d3b12aeb";
   }
 
   static const char* value(const ::hamr_test::HamrStatus_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x0a16597238e260f7ULL;
-  static const uint64_t static_value2 = 0x4664b5e3f3a62748ULL;
+  static const uint64_t static_value1 = 0xc8d041d77470a8b1ULL;
+  static const uint64_t static_value2 = 0xb7fefe76d3b12aebULL;
 };
 
 template<class ContainerAllocator>
@@ -156,6 +161,7 @@ struct Definition< ::hamr_test::HamrStatus_<ContainerAllocator> >
   static const char* value()
   {
     return "time timestamp\n\
+uint16 looptime\n\
 hamr_test/MotorStatus left_motor\n\
 hamr_test/MotorStatus right_motor\n\
 hamr_test/MotorStatus turret_motor\n\
@@ -183,6 +189,7 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.timestamp);
+      stream.next(m.looptime);
       stream.next(m.left_motor);
       stream.next(m.right_motor);
       stream.next(m.turret_motor);
@@ -206,6 +213,8 @@ struct Printer< ::hamr_test::HamrStatus_<ContainerAllocator> >
   {
     s << indent << "timestamp: ";
     Printer<ros::Time>::stream(s, indent + "  ", v.timestamp);
+    s << indent << "looptime: ";
+    Printer<uint16_t>::stream(s, indent + "  ", v.looptime);
     s << indent << "left_motor: ";
     s << std::endl;
     Printer< ::hamr_test::MotorStatus_<ContainerAllocator> >::stream(s, indent + "  ", v.left_motor);

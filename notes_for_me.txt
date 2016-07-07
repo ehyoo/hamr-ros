@@ -1,0 +1,6 @@
+live plotting the velocities with respect to time.
+	live plotting that moves- no need for the entire thign
+	also see desired velocity (we'll make that as a different colour)
+
+
+Stop motor command (kill switch) 

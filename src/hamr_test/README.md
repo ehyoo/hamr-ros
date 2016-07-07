@@ -5,7 +5,6 @@ This is a preliminary package for HAMR where I defined:
 
 ## Documentation
 ### Topics  
-`hamr_status`
 
 ####`hamr_command`
 Published to by:  
@@ -23,7 +22,7 @@ Contains a certain value that a certain variable in the Arduino code should be c
 Published to by:  
 Arduino  
   
-Subscribed to by:
+Subscribed to by:  
 `velocity_live_plotter`  
 
 Publishes:  

@@ -1,0 +1,6 @@
+<launch>
+	<!-- change args depending on USB -->
+	<node name="hamr" pkg="rosserial_python" type="serial_node.py" args="/dev/ttyACM0" />
+	<!-- Live plotting -->
+	<node name="plotter" pkg="rqt_plot" type="rqt_plot" args="/hamr_state/right_motor/velocity /hamr_state/right_motor/desired_velocity" />
+</launch>

@@ -53,13 +53,18 @@ class HamrController():
         which_motor = str.strip(which_motor.lower())
         if which_motor == 'r':
             msg.type = ord(self.val_map.get('SIG_R_MOTOR'))
+            self.get_val(msg, is_right=True)
         elif which_motor == 'l':
             msg.type = ord(self.val_map.get('SIG_L_MOTOR'))
+            self.get_val(msg)
         elif which_motor == 't':
             msg.type = ord(self.val_map.get('SIG_T_MOTOR'))
+            self.get_val(msg)
         else:
+            # REMEMBER THAT RIGHT IS NEGATIVE.
             print "will write to right motor"
             msg.type = ord(self.val_map.get('SIG_R_MOTOR'))
+            self.get_val(msg, is_right=True)
 
     def pid_control(self, msg):
         which_motor = raw_input("Which motor? R, L, T\n")
@@ -117,11 +122,14 @@ class HamrController():
             self.pub.publish(msg)
         print 'killed'
 
-    def get_val(self, msg):
+    def get_val(self, msg, is_right=False):
         val_msg = raw_input('What amount?\n')
         try:
             float(val_msg)
-            msg.val = val_msg
+            if is_right:
+                msg.val = '-' + val_msg
+            else:
+                msg.val = val_msg
         except ValueError:
             print 'Not a valid number, will send 0'
             msg.val = '0'
@@ -138,7 +146,6 @@ class HamrController():
             drive_or_pid = str.strip(drive_or_pid.lower())
             if drive_or_pid == 'drive':
                 self.drive_control(msg)
-                self.get_val(msg)
             elif drive_or_pid == 'pid':
                 self.pid_control(msg)
                 self.get_val(msg)

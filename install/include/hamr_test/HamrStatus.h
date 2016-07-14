@@ -136,12 +136,12 @@ struct MD5Sum< ::hamr_test::HamrStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "c8d041d77470a8b1b7fefe76d3b12aeb";
+    return "425627e993fa73fa789175bea46a409d";
   }
 
   static const char* value(const ::hamr_test::HamrStatus_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xc8d041d77470a8b1ULL;
-  static const uint64_t static_value2 = 0xb7fefe76d3b12aebULL;
+  static const uint64_t static_value1 = 0x425627e993fa73faULL;
+  static const uint64_t static_value2 = 0x789175bea46a409dULL;
 };
 
 template<class ContainerAllocator>
@@ -170,6 +170,8 @@ MSG: hamr_test/MotorStatus\n\
 uint16 position\n\
 int16 velocity\n\
 int16 desired_velocity\n\
+int16 speed_cmd\n\
+int16 pidError\n\
 ";
   }
 

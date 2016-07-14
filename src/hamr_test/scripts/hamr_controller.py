@@ -104,6 +104,7 @@ class HamrController():
             elif which_val == 'D':
                 msg.type = ord(self.val_map.get('SIG_T_KD'))
             else:
+                print 'Not valid, will write to P'
                 msg.type = ord(self.val_map.get('SIG_T_KP'))
         else:
             print 'Not valid, will publish to Right P'
@@ -113,10 +114,14 @@ class HamrController():
         right_msg = HamrCommand()
         left_msg = HamrCommand()
         turret_msg = HamrCommand()
+        ddr_msg = HamrCommand()
+        ddv_msg = HamrCommand()
         right_msg.type = ord(self.val_map.get('SIG_R_MOTOR'))
         left_msg.type = ord(self.val_map.get('SIG_L_MOTOR'))
         turret_msg.type = ord(self.val_map.get('SIG_T_MOTOR'))
-        msg_list = [right_msg, left_msg, turret_msg]
+        ddr_msg.type = ord(self.val_map.get('SIG_DD_R'))
+        ddv_msg.type = ord(self.val_map.get('SIG_DD_V'))
+        msg_list = [right_msg, left_msg, turret_msg, ddr_msg, ddv_msg]
         for msg in msg_list:
             msg.val = '0'
             self.pub.publish(msg)
@@ -135,6 +140,24 @@ class HamrController():
             msg.val = '0'
         self.pub.publish(msg)
 
+    def dd_set(self, msg):
+        which = raw_input('V or R?\n')
+        which = str.strip(which.lower())
+        if which == 'v':
+            # Right negative?
+            print 'writing to V'
+            msg.type = ord(self.val_map.get('SIG_DD_V'))
+        else:
+            print 'writing to R'
+            msg.type = ord(self.val_map.get('SIG_DD_R'))
+        val_msg = raw_input('What value?')
+        try:
+            float(val_msg)
+            msg.val = val_msg
+        except ValueError:
+            print 'Not a valid number, will send 0'
+            msg.val = '0'
+        self.pub.publish(msg)
 
     def talker(self):
         self.pub = rospy.Publisher('hamr_command', HamrCommand, queue_size=10)
@@ -142,7 +165,7 @@ class HamrController():
         rate = rospy.Rate(10) # 10hz
         msg = HamrCommand()
         while not rospy.is_shutdown():
-            drive_or_pid = raw_input("Drive, PID, Kill all Motors (kill) or Quit?\n")
+            drive_or_pid = raw_input("Drive, PID, Kill all Motors (kill), DD Set (DDS) or Quit?\n")
             drive_or_pid = str.strip(drive_or_pid.lower())
             if drive_or_pid == 'drive':
                 self.drive_control(msg)
@@ -154,6 +177,8 @@ class HamrController():
                 self.kill_motors()
             elif drive_or_pid == 'quit':
                 rospy.signal_shutdown('Node shut down')
+            elif drive_or_pid == 'dds':
+                self.dd_set(msg)
             else:
                 print "That's not a valid option"
             rate.sleep()

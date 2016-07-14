@@ -26,12 +26,16 @@ struct MotorStatus_
   MotorStatus_()
     : position(0)
     , velocity(0)
-    , desired_velocity(0)  {
+    , desired_velocity(0)
+    , speed_cmd(0)
+    , pidError(0)  {
     }
   MotorStatus_(const ContainerAllocator& _alloc)
     : position(0)
     , velocity(0)
-    , desired_velocity(0)  {
+    , desired_velocity(0)
+    , speed_cmd(0)
+    , pidError(0)  {
   (void)_alloc;
     }
 
@@ -45,6 +49,12 @@ struct MotorStatus_
 
    typedef int16_t _desired_velocity_type;
   _desired_velocity_type desired_velocity;
+
+   typedef int16_t _speed_cmd_type;
+  _speed_cmd_type speed_cmd;
+
+   typedef int16_t _pidError_type;
+  _pidError_type pidError;
 
 
 
@@ -123,12 +133,12 @@ struct MD5Sum< ::hamr_test::MotorStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "dbceefd30efff8798b9f236b068c1e43";
+    return "15945dc3aa5ce3ad70aaaff6085229e9";
   }
 
   static const char* value(const ::hamr_test::MotorStatus_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xdbceefd30efff879ULL;
-  static const uint64_t static_value2 = 0x8b9f236b068c1e43ULL;
+  static const uint64_t static_value1 = 0x15945dc3aa5ce3adULL;
+  static const uint64_t static_value2 = 0x70aaaff6085229e9ULL;
 };
 
 template<class ContainerAllocator>
@@ -150,6 +160,8 @@ struct Definition< ::hamr_test::MotorStatus_<ContainerAllocator> >
     return "uint16 position\n\
 int16 velocity\n\
 int16 desired_velocity\n\
+int16 speed_cmd\n\
+int16 pidError\n\
 ";
   }
 
@@ -171,6 +183,8 @@ namespace serialization
       stream.next(m.position);
       stream.next(m.velocity);
       stream.next(m.desired_velocity);
+      stream.next(m.speed_cmd);
+      stream.next(m.pidError);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -195,6 +209,10 @@ struct Printer< ::hamr_test::MotorStatus_<ContainerAllocator> >
     Printer<int16_t>::stream(s, indent + "  ", v.velocity);
     s << indent << "desired_velocity: ";
     Printer<int16_t>::stream(s, indent + "  ", v.desired_velocity);
+    s << indent << "speed_cmd: ";
+    Printer<int16_t>::stream(s, indent + "  ", v.speed_cmd);
+    s << indent << "pidError: ";
+    Printer<int16_t>::stream(s, indent + "  ", v.pidError);
   }
 };
 

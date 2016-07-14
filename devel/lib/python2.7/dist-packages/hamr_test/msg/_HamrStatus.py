@@ -9,7 +9,7 @@ import hamr_test.msg
 import genpy
 
 class HamrStatus(genpy.Message):
-  _md5sum = "c8d041d77470a8b1b7fefe76d3b12aeb"
+  _md5sum = "425627e993fa73fa789175bea46a409d"
   _type = "hamr_test/HamrStatus"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """time timestamp
@@ -21,7 +21,9 @@ hamr_test/MotorStatus turret_motor
 MSG: hamr_test/MotorStatus
 uint16 position
 int16 velocity
-int16 desired_velocity"""
+int16 desired_velocity
+int16 speed_cmd
+int16 pidError"""
   __slots__ = ['timestamp','looptime','left_motor','right_motor','turret_motor']
   _slot_types = ['time','uint16','hamr_test/MotorStatus','hamr_test/MotorStatus','hamr_test/MotorStatus']
 
@@ -72,7 +74,7 @@ int16 desired_velocity"""
     """
     try:
       _x = self
-      buff.write(_struct_2I2H2hH2hH2h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity))
+      buff.write(_struct_2I2H4hH4hH4h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.left_motor.speed_cmd, _x.left_motor.pidError, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.right_motor.speed_cmd, _x.right_motor.pidError, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity, _x.turret_motor.speed_cmd, _x.turret_motor.pidError))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -93,8 +95,8 @@ int16 desired_velocity"""
       end = 0
       _x = self
       start = end
-      end += 28
-      (_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity,) = _struct_2I2H2hH2hH2h.unpack(str[start:end])
+      end += 40
+      (_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.left_motor.speed_cmd, _x.left_motor.pidError, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.right_motor.speed_cmd, _x.right_motor.pidError, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity, _x.turret_motor.speed_cmd, _x.turret_motor.pidError,) = _struct_2I2H4hH4hH4h.unpack(str[start:end])
       self.timestamp.canon()
       return self
     except struct.error as e:
@@ -109,7 +111,7 @@ int16 desired_velocity"""
     """
     try:
       _x = self
-      buff.write(_struct_2I2H2hH2hH2h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity))
+      buff.write(_struct_2I2H4hH4hH4h.pack(_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.left_motor.speed_cmd, _x.left_motor.pidError, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.right_motor.speed_cmd, _x.right_motor.pidError, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity, _x.turret_motor.speed_cmd, _x.turret_motor.pidError))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -131,12 +133,12 @@ int16 desired_velocity"""
       end = 0
       _x = self
       start = end
-      end += 28
-      (_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity,) = _struct_2I2H2hH2hH2h.unpack(str[start:end])
+      end += 40
+      (_x.timestamp.secs, _x.timestamp.nsecs, _x.looptime, _x.left_motor.position, _x.left_motor.velocity, _x.left_motor.desired_velocity, _x.left_motor.speed_cmd, _x.left_motor.pidError, _x.right_motor.position, _x.right_motor.velocity, _x.right_motor.desired_velocity, _x.right_motor.speed_cmd, _x.right_motor.pidError, _x.turret_motor.position, _x.turret_motor.velocity, _x.turret_motor.desired_velocity, _x.turret_motor.speed_cmd, _x.turret_motor.pidError,) = _struct_2I2H4hH4hH4h.unpack(str[start:end])
       self.timestamp.canon()
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_2I2H2hH2hH2h = struct.Struct("<2I2H2hH2hH2h")
+_struct_2I2H4hH4hH4h = struct.Struct("<2I2H4hH4hH4h")

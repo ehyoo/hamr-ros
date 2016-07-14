@@ -111,16 +111,16 @@
   "hamr_test/HamrStatus")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<HamrStatus>)))
   "Returns md5sum for a message object of type '<HamrStatus>"
-  "c8d041d77470a8b1b7fefe76d3b12aeb")
+  "425627e993fa73fa789175bea46a409d")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'HamrStatus)))
   "Returns md5sum for a message object of type 'HamrStatus"
-  "c8d041d77470a8b1b7fefe76d3b12aeb")
+  "425627e993fa73fa789175bea46a409d")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<HamrStatus>)))
   "Returns full string definition for message of type '<HamrStatus>"
-  (cl:format cl:nil "time timestamp~%uint16 looptime~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
+  (cl:format cl:nil "time timestamp~%uint16 looptime~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%int16 speed_cmd~%int16 pidError~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'HamrStatus)))
   "Returns full string definition for message of type 'HamrStatus"
-  (cl:format cl:nil "time timestamp~%uint16 looptime~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%~%"))
+  (cl:format cl:nil "time timestamp~%uint16 looptime~%hamr_test/MotorStatus left_motor~%hamr_test/MotorStatus right_motor~%hamr_test/MotorStatus turret_motor~%================================================================================~%MSG: hamr_test/MotorStatus~%uint16 position~%int16 velocity~%int16 desired_velocity~%int16 speed_cmd~%int16 pidError~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <HamrStatus>))
   (cl:+ 0
      8

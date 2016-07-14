@@ -48,6 +48,79 @@ class HamrController():
             'SIG_HOLO_R_KD': 'O'
         } 
 
+    def call_tests(self, msg):
+        print 'you picked tests'
+        ans = raw_input('Which tests? Options: Square')
+        ans = str.strip(ans.lower())
+        if ans == 'square':
+            print 'You picked the Square test'
+            msg.type = -100 #arbitrary int set by me to define tests
+            msg.val = '0'
+        self.pub.publish(msg)
+
+    def holonomic_control(self, msg):
+        print 'You picked holonomic control'
+        ans = raw_input('Input or PID Control?\n')
+        ans = str.strip(ans.lower())
+        if ans == 'input':
+            print 'You picked input'
+            input_ans = raw_input('X, Y, or R?\n')
+            input_ans = str.strip(input_ans.lower())
+            if input_ans == 'x':
+                print 'picked x'
+                msg.type = ord(self.val_map.get('SIG_HOLO_X'))
+            elif input_ans == 'y':
+                print 'picked y'
+                msg.type = ord(self.val_map.get('SIG_HOLO_Y'))
+            elif input_ans == 'r':
+                print 'picked r'
+                msg.type = ord(self.val_map.get('SIG_HOLO_R'))
+            else:
+                print 'Invalid, will write to x'
+                msg.type = ord(self.val_map.get('SIG_HOLO_X'))
+        else:
+            print 'You picked PID Control'
+            pid_ans = raw_input('X PID, Y PID, or R PID? Input pair, like XP')
+            pid_ans = str.strip(pid_ans.lower())
+            if pid_ans == 'xp':
+                print 'you picked xp'
+                msg.type = ord(self.val_map.get('SIG_HOLO_X_KP'))
+            elif pid_ans == 'xi':
+                print 'you picked xi'
+                msg.type = ord(self.val_map.get('SIG_HOLO_X_KI'))
+            elif pid_ans == 'xd':
+                print 'you picked xd'
+                msg.type = ord(self.val_map.get('SIG_HOLO_X_KD'))
+            elif pid_ans == 'yp':
+                print 'you picked yp'
+                msg.type = ord(self.val_map.get('SIG_HOLO_Y_KP'))
+            elif pid_ans == 'yi':
+                print 'you picked yi'
+                msg.type = ord(self.val_map.get('SIG_HOLO_Y_KI'))
+            elif pid_ans == 'yd':
+                print 'you picked yd'
+                msg.type = ord(self.val_map.get('SIG_HOLO_Y_KD'))
+            elif pid_ans == 'rp':
+                print 'you picked rp'
+                msg.type = ord(self.val_map.get('SIG_HOLO_R_KP'))
+            elif pid_ans == 'ri':
+                print 'you picked ri'
+                msg.type = ord(self.val_map.get('SIG_HOLO_R_KI'))
+            elif pid_ans == 'rd':
+                print 'you picked rd'
+                msg.type = ord(self.val_map.get('SIG_HOLO_R_KD'))
+            else:
+                print 'you picked an invalid value, will write to xi'
+                msg.type = ord(self.val_map.get('SIG_HOLO_X_KI'))
+        val_ans = raw_input('What value?\n')
+        try:
+            float(val_ans)
+            msg.val = val_ans
+        except ValueError:
+            print 'That is invalid, will write 0'
+            msg.val = '0'
+        self.pub.publish(msg)
+
     def drive_control(self, msg):
         which_motor = raw_input('Which one? R, L, T')
         which_motor = str.strip(which_motor.lower())
@@ -165,7 +238,7 @@ class HamrController():
         rate = rospy.Rate(10) # 10hz
         msg = HamrCommand()
         while not rospy.is_shutdown():
-            drive_or_pid = raw_input("Drive, PID, Kill all Motors (kill), DD Set (DDS) or Quit?\n")
+            drive_or_pid = raw_input("Drive, PID, Kill all Motors (kill), DD Set (DDS), Holonomic (holo), tests or Quit?\n")
             drive_or_pid = str.strip(drive_or_pid.lower())
             if drive_or_pid == 'drive':
                 self.drive_control(msg)
@@ -179,6 +252,10 @@ class HamrController():
                 rospy.signal_shutdown('Node shut down')
             elif drive_or_pid == 'dds':
                 self.dd_set(msg)
+            elif drive_or_pid == 'holo':
+                self.holonomic_control(msg)
+            elif drive_or_pid == 'test':
+                self.call_tests(msg)
             else:
                 print "That's not a valid option"
             rate.sleep()

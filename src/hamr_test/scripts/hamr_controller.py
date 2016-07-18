@@ -1,5 +1,10 @@
 #!/usr/bin/env python
-# license removed for brevity
+# A test suite for running direct motor control, diff drive, and holonomic 
+# control, as well as PID adjustment for both motor control and holonomic. 
+# Be wary that direct motor control and differential drive depends on
+# the state of the embedded code. By default holonomic control should be the
+# only function that works.
+# This is mostly for debugging purposes.
 import rospy
 from hamr_test.msg import HamrCommand
 
@@ -49,16 +54,24 @@ class HamrController():
         } 
 
     def call_tests(self, msg):
+    	# Runs set defined tests written in the embedded code.
         print 'you picked tests'
-        ans = raw_input('Which tests? Options: Square')
+        ans = raw_input('Which tests? Options: Square, Right \n')
         ans = str.strip(ans.lower())
         if ans == 'square':
             print 'You picked the Square test'
-            msg.type = -100 #arbitrary int set by me to define tests
+            # The following message types are arbitrarily defined 
+            # in order to match the cases in the embedded code. 
+            msg.type = -100 
+            msg.val = '0'
+        elif ans == 'right':
+            print 'You picked the Right Angle test'
+            msg.type = -101 
             msg.val = '0'
         self.pub.publish(msg)
 
     def holonomic_control(self, msg):
+    	# All things holonomic- both PID and XYR commands
         print 'You picked holonomic control'
         ans = raw_input('Input or PID Control?\n')
         ans = str.strip(ans.lower())
@@ -122,6 +135,7 @@ class HamrController():
         self.pub.publish(msg)
 
     def drive_control(self, msg):
+    	# direct drive control
         which_motor = raw_input('Which one? R, L, T')
         which_motor = str.strip(which_motor.lower())
         if which_motor == 'r':
@@ -140,6 +154,7 @@ class HamrController():
             self.get_val(msg, is_right=True)
 
     def pid_control(self, msg):
+    	# Direct drive PID adjustment
         which_motor = raw_input("Which motor? R, L, T\n")
         which_motor = str.strip(which_motor.upper())
         if which_motor == 'R':
@@ -184,23 +199,29 @@ class HamrController():
             msg.type = ord(self.val_map.get('SIG_R_KP'))
 
     def kill_motors(self):
-        right_msg = HamrCommand()
-        left_msg = HamrCommand()
-        turret_msg = HamrCommand()
-        ddr_msg = HamrCommand()
-        ddv_msg = HamrCommand()
-        right_msg.type = ord(self.val_map.get('SIG_R_MOTOR'))
-        left_msg.type = ord(self.val_map.get('SIG_L_MOTOR'))
-        turret_msg.type = ord(self.val_map.get('SIG_T_MOTOR'))
-        ddr_msg.type = ord(self.val_map.get('SIG_DD_R'))
-        ddv_msg.type = ord(self.val_map.get('SIG_DD_V'))
-        msg_list = [right_msg, left_msg, turret_msg, ddr_msg, ddv_msg]
-        for msg in msg_list:
-            msg.val = '0'
-            self.pub.publish(msg)
+    	# sends a series of desired messages with value 0
+    	# this is a rather soft stop, so if things go wrong the only real
+    	# emergency full stop is to kill the power.
+    	msg_type_list = ['SIG_R_MOTOR', 
+    					'SIG_L_MOTOR',
+    					'SIG_T_MOTOR',
+    					'SIG_DD_R',
+    					'SIG_DD_V',
+    					'SIG_HOLO_X',
+    					'SIG_HOLO_Y',
+    					'SIG_HOLO_R']
+    	msg_list = []
+    	for i in range(len(msg_type_list)):
+    		arb_msg = HamrCommand()
+    		arb_msg.type = ord(self.val_map.get(msg_type_list[i]))
+    		arb_msg.val = '0'
+    		self.pub.publish(arb_msg)
         print 'killed'
 
     def get_val(self, msg, is_right=False):
+        # Gets the value of what to send
+        # If the given value is right then make it negative because of our
+        # schematic of the HAMR (flipped reference frames)
         val_msg = raw_input('What amount?\n')
         try:
             float(val_msg)
@@ -214,10 +235,12 @@ class HamrController():
         self.pub.publish(msg)
 
     def dd_set(self, msg):
+    	# Differential Drive command
         which = raw_input('V or R?\n')
         which = str.strip(which.lower())
         if which == 'v':
             # Right negative?
+            # ^^^ This should be accounted for in our calculations
             print 'writing to V'
             msg.type = ord(self.val_map.get('SIG_DD_V'))
         else:
@@ -233,6 +256,7 @@ class HamrController():
         self.pub.publish(msg)
 
     def talker(self):
+    	# Main publisher logic- app branches out from here
         self.pub = rospy.Publisher('hamr_command', HamrCommand, queue_size=10)
         rospy.init_node('hamr_controller', anonymous=True)
         rate = rospy.Rate(10) # 10hz
@@ -264,4 +288,5 @@ if __name__ == '__main__':
     try:
         HamrController().talker()
     except rospy.ROSInterruptException:
+        # hello friend
         pass

@@ -1,6 +1,8 @@
 /home/modlab/Documents/hamr-ros/build/hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir
 /home/modlab/Documents/hamr-ros/build/hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir
+/home/modlab/Documents/hamr-ros/build/hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir
 /home/modlab/Documents/hamr-ros/build/hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir
+/home/modlab/Documents/hamr-ros/build/hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir
 /home/modlab/Documents/hamr-ros/build/CMakeFiles/clean_test_results.dir
 /home/modlab/Documents/hamr-ros/build/CMakeFiles/download_extra_data.dir
 /home/modlab/Documents/hamr-ros/build/CMakeFiles/doxygen.dir

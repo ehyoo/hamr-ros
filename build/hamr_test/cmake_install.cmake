@@ -37,6 +37,8 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg"
     "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg"
     "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg"
+    "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg"
+    "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

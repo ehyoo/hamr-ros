@@ -1,8 +1,10 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/hamr_test_generate_messages_cpp"
   "/home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrCommand.h"
+  "/home/modlab/Documents/hamr-ros/devel/include/hamr_test/HoloStatus.h"
   "/home/modlab/Documents/hamr-ros/devel/include/hamr_test/MotorStatus.h"
   "/home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrStatus.h"
+  "/home/modlab/Documents/hamr-ros/devel/include/hamr_test/VelocityStatus.h"
 )
 
 # Per-language clean rules from dependency scanning.

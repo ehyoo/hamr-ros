@@ -50,6 +50,8 @@ add_message_files(
   HamrStatus.msg
   MotorStatus.msg
   HamrCommand.msg
+  HoloStatus.msg
+  VelocityStatus.msg
 )
 
 ## Generate services in the 'srv' folder

@@ -1,0 +1,2 @@
+setpoint_x, setpoint_y, setpoint_r (which are desired) get_holonomic_motor_velocitiesa
+*xdot, *ydot, *tdot (which are sensed) from compute_global_state

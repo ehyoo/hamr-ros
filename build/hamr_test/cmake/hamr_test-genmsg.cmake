@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "hamr_test: 3 messages, 0 services")
+message(STATUS "hamr_test: 5 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
@@ -30,6 +30,16 @@ add_custom_target(_hamr_test_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hamr_test" "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg" ""
 )
 
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg" NAME_WE)
+add_custom_target(_hamr_test_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hamr_test" "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg" ""
+)
+
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg" NAME_WE)
+add_custom_target(_hamr_test_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hamr_test" "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg" ""
+)
+
 #
 #  langs = gencpp;genlisp;genpy
 #
@@ -38,6 +48,12 @@ add_custom_target(_hamr_test_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(hamr_test
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hamr_test
+)
+_generate_msg_cpp(hamr_test
+  "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hamr_test
@@ -52,6 +68,12 @@ _generate_msg_cpp(hamr_test
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg"
   "${MSG_I_FLAGS}"
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hamr_test
+)
+_generate_msg_cpp(hamr_test
+  "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hamr_test
 )
 
@@ -75,6 +97,10 @@ get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/
 add_dependencies(hamr_test_generate_messages_cpp _hamr_test_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hamr_test_generate_messages_cpp _hamr_test_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg" NAME_WE)
+add_dependencies(hamr_test_generate_messages_cpp _hamr_test_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg" NAME_WE)
+add_dependencies(hamr_test_generate_messages_cpp _hamr_test_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(hamr_test_gencpp)
@@ -92,6 +118,12 @@ _generate_msg_lisp(hamr_test
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hamr_test
 )
 _generate_msg_lisp(hamr_test
+  "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hamr_test
+)
+_generate_msg_lisp(hamr_test
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -101,6 +133,12 @@ _generate_msg_lisp(hamr_test
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg"
   "${MSG_I_FLAGS}"
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hamr_test
+)
+_generate_msg_lisp(hamr_test
+  "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hamr_test
 )
 
@@ -124,6 +162,10 @@ get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/
 add_dependencies(hamr_test_generate_messages_lisp _hamr_test_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg" NAME_WE)
 add_dependencies(hamr_test_generate_messages_lisp _hamr_test_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg" NAME_WE)
+add_dependencies(hamr_test_generate_messages_lisp _hamr_test_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg" NAME_WE)
+add_dependencies(hamr_test_generate_messages_lisp _hamr_test_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(hamr_test_genlisp)
@@ -141,6 +183,12 @@ _generate_msg_py(hamr_test
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hamr_test
 )
 _generate_msg_py(hamr_test
+  "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hamr_test
+)
+_generate_msg_py(hamr_test
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg"
   "${MSG_I_FLAGS}"
   ""
@@ -150,6 +198,12 @@ _generate_msg_py(hamr_test
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg"
   "${MSG_I_FLAGS}"
   "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hamr_test
+)
+_generate_msg_py(hamr_test
+  "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hamr_test
 )
 
@@ -172,6 +226,10 @@ add_dependencies(hamr_test_generate_messages_py _hamr_test_generate_messages_che
 get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg" NAME_WE)
 add_dependencies(hamr_test_generate_messages_py _hamr_test_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg" NAME_WE)
+add_dependencies(hamr_test_generate_messages_py _hamr_test_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg" NAME_WE)
+add_dependencies(hamr_test_generate_messages_py _hamr_test_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg" NAME_WE)
 add_dependencies(hamr_test_generate_messages_py _hamr_test_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

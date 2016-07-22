@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg"
+messages_str = "/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg;/home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg"
 services_str = ""
 pkg_name = "hamr_test"
 dependencies_str = "std_msgs"

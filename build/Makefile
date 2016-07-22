@@ -267,6 +267,19 @@ _hamr_test_generate_messages_check_deps_HamrStatus/fast:
 .PHONY : _hamr_test_generate_messages_check_deps_HamrStatus/fast
 
 #=============================================================================
+# Target rules for targets named _hamr_test_generate_messages_check_deps_HoloStatus
+
+# Build rule for target.
+_hamr_test_generate_messages_check_deps_HoloStatus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hamr_test_generate_messages_check_deps_HoloStatus
+.PHONY : _hamr_test_generate_messages_check_deps_HoloStatus
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_HoloStatus/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_HoloStatus/fast
+
+#=============================================================================
 # Target rules for targets named _hamr_test_generate_messages_check_deps_MotorStatus
 
 # Build rule for target.
@@ -278,6 +291,19 @@ _hamr_test_generate_messages_check_deps_MotorStatus: cmake_check_build_system
 _hamr_test_generate_messages_check_deps_MotorStatus/fast:
 	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build
 .PHONY : _hamr_test_generate_messages_check_deps_MotorStatus/fast
+
+#=============================================================================
+# Target rules for targets named _hamr_test_generate_messages_check_deps_VelocityStatus
+
+# Build rule for target.
+_hamr_test_generate_messages_check_deps_VelocityStatus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hamr_test_generate_messages_check_deps_VelocityStatus
+.PHONY : _hamr_test_generate_messages_check_deps_VelocityStatus
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_VelocityStatus/fast:
+	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_VelocityStatus/fast
 
 #=============================================================================
 # Target rules for targets named hamr_test_gencpp
@@ -509,7 +535,9 @@ help:
 	@echo "... gtest_main"
 	@echo "... _hamr_test_generate_messages_check_deps_HamrCommand"
 	@echo "... _hamr_test_generate_messages_check_deps_HamrStatus"
+	@echo "... _hamr_test_generate_messages_check_deps_HoloStatus"
 	@echo "... _hamr_test_generate_messages_check_deps_MotorStatus"
+	@echo "... _hamr_test_generate_messages_check_deps_VelocityStatus"
 	@echo "... hamr_test_gencpp"
 	@echo "... hamr_test_generate_messages"
 	@echo "... hamr_test_generate_messages_cpp"

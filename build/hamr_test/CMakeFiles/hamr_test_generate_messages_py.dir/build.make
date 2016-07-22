@@ -46,8 +46,10 @@ CMAKE_BINARY_DIR = /home/modlab/Documents/hamr-ros/build
 include hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/progress.make
 
 hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrCommand.py
+hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HoloStatus.py
 hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_MotorStatus.py
 hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrStatus.py
+hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_VelocityStatus.py
 hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py
 
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
@@ -56,31 +58,47 @@ hamr_test/CMakeFiles/hamr_test_generate_messages_py: /home/modlab/Documents/hamr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG hamr_test/HamrCommand"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg
 
+/home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HoloStatus.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HoloStatus.py: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG hamr_test/HoloStatus"
+	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg
+
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_MotorStatus.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_MotorStatus.py: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG hamr_test/MotorStatus"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg
 
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrStatus.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrStatus.py: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrStatus.py: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG hamr_test/HamrStatus"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg
 
+/home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_VelocityStatus.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_VelocityStatus.py: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG hamr_test/VelocityStatus"
+	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg
+
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrCommand.py
+/home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HoloStatus.py
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_MotorStatus.py
 /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrStatus.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_4)
+/home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_VelocityStatus.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for hamr_test"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg --initpy
 
 hamr_test_generate_messages_py: hamr_test/CMakeFiles/hamr_test_generate_messages_py
 hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrCommand.py
+hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HoloStatus.py
 hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_MotorStatus.py
 hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_HamrStatus.py
+hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/_VelocityStatus.py
 hamr_test_generate_messages_py: /home/modlab/Documents/hamr-ros/devel/lib/python2.7/dist-packages/hamr_test/msg/__init__.py
 hamr_test_generate_messages_py: hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build.make
 .PHONY : hamr_test_generate_messages_py

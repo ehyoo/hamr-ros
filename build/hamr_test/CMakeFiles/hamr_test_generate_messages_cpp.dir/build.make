@@ -46,8 +46,10 @@ CMAKE_BINARY_DIR = /home/modlab/Documents/hamr-ros/build
 include hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/progress.make
 
 hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrCommand.h
+hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HoloStatus.h
 hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/MotorStatus.h
 hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrStatus.h
+hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/VelocityStatus.h
 
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrCommand.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrCommand.h: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg
@@ -56,10 +58,17 @@ hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/ham
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from hamr_test/HamrCommand.msg"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/include/hamr_test -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/modlab/Documents/hamr-ros/devel/include/hamr_test/HoloStatus.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/modlab/Documents/hamr-ros/devel/include/hamr_test/HoloStatus.h: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg
+/home/modlab/Documents/hamr-ros/devel/include/hamr_test/HoloStatus.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from hamr_test/HoloStatus.msg"
+	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/include/hamr_test -e /opt/ros/indigo/share/gencpp/cmake/..
+
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/MotorStatus.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/MotorStatus.h: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/MotorStatus.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from hamr_test/MotorStatus.msg"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/include/hamr_test -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -67,14 +76,23 @@ hamr_test/CMakeFiles/hamr_test_generate_messages_cpp: /home/modlab/Documents/ham
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrStatus.h: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrStatus.h: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg
 /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrStatus.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from hamr_test/HamrStatus.msg"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/include/hamr_test -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/modlab/Documents/hamr-ros/devel/include/hamr_test/VelocityStatus.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/modlab/Documents/hamr-ros/devel/include/hamr_test/VelocityStatus.h: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg
+/home/modlab/Documents/hamr-ros/devel/include/hamr_test/VelocityStatus.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from hamr_test/VelocityStatus.msg"
+	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/include/hamr_test -e /opt/ros/indigo/share/gencpp/cmake/..
+
 hamr_test_generate_messages_cpp: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp
 hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrCommand.h
+hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HoloStatus.h
 hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/MotorStatus.h
 hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/HamrStatus.h
+hamr_test_generate_messages_cpp: /home/modlab/Documents/hamr-ros/devel/include/hamr_test/VelocityStatus.h
 hamr_test_generate_messages_cpp: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build.make
 .PHONY : hamr_test_generate_messages_cpp
 

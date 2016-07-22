@@ -46,8 +46,10 @@ CMAKE_BINARY_DIR = /home/modlab/Documents/hamr-ros/build
 include hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/progress.make
 
 hamr_test/CMakeFiles/hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrCommand.lisp
+hamr_test/CMakeFiles/hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HoloStatus.lisp
 hamr_test/CMakeFiles/hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/MotorStatus.lisp
 hamr_test/CMakeFiles/hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrStatus.lisp
+hamr_test/CMakeFiles/hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/VelocityStatus.lisp
 
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrCommand.lisp: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg
@@ -55,23 +57,37 @@ hamr_test/CMakeFiles/hamr_test_generate_messages_lisp: /home/modlab/Documents/ha
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from hamr_test/HamrCommand.msg"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrCommand.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg
 
+/home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HoloStatus.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HoloStatus.lisp: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from hamr_test/HoloStatus.msg"
+	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HoloStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg
+
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/MotorStatus.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/MotorStatus.lisp: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from hamr_test/MotorStatus.msg"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg
 
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrStatus.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrStatus.lisp: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg
 /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrStatus.lisp: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/MotorStatus.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from hamr_test/HamrStatus.msg"
 	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/HamrStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg
 
+/home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/VelocityStatus.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/VelocityStatus.lisp: /home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from hamr_test/VelocityStatus.msg"
+	cd /home/modlab/Documents/hamr-ros/build/hamr_test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/modlab/Documents/hamr-ros/src/hamr_test/msg/VelocityStatus.msg -Ihamr_test:/home/modlab/Documents/hamr-ros/src/hamr_test/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p hamr_test -o /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg
+
 hamr_test_generate_messages_lisp: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp
 hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrCommand.lisp
+hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HoloStatus.lisp
 hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/MotorStatus.lisp
 hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/HamrStatus.lisp
+hamr_test_generate_messages_lisp: /home/modlab/Documents/hamr-ros/devel/share/common-lisp/ros/hamr_test/msg/VelocityStatus.lisp
 hamr_test_generate_messages_lisp: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build.make
 .PHONY : hamr_test_generate_messages_lisp
 

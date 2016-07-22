@@ -1,0 +1,13 @@
+int16 setpoint_x
+int16 setpoint_y
+int16 setpoint_r
+int16 xdot
+int16 ydot
+int16 tdot
+int16 left_vel
+int16 right_vel
+int16 turret_vel
+int16 desired_left_vel
+int16 desired_right_vel
+int16 desired_turret_vel
+int16 sensed_drive_angle

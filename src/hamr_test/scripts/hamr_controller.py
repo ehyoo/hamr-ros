@@ -128,7 +128,12 @@ class HamrController():
         val_ans = raw_input('What value?\n')
         try:
             float(val_ans)
-            msg.val = val_ans
+            if float(val_ans) > 0.5 or float(val_ans) < -0.5:
+            	print 'Woah there'
+            	print 'Too big, will write 0'
+            	msg.val = '0.0'
+            else:
+	            msg.val = val_ans
         except ValueError:
             print 'That is invalid, will write 0'
             msg.val = '0'

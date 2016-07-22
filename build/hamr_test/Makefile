@@ -178,6 +178,20 @@ _hamr_test_generate_messages_check_deps_HamrStatus/fast:
 .PHONY : _hamr_test_generate_messages_check_deps_HamrStatus/fast
 
 # Convenience name for target.
+hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule:
+	cd /home/modlab/Documents/hamr-ros/build && $(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule
+.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule
+
+# Convenience name for target.
+_hamr_test_generate_messages_check_deps_HoloStatus: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule
+.PHONY : _hamr_test_generate_messages_check_deps_HoloStatus
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_HoloStatus/fast:
+	cd /home/modlab/Documents/hamr-ros/build && $(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_HoloStatus/fast
+
+# Convenience name for target.
 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/rule:
 	cd /home/modlab/Documents/hamr-ros/build && $(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/rule
 .PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/rule
@@ -190,6 +204,20 @@ _hamr_test_generate_messages_check_deps_MotorStatus: hamr_test/CMakeFiles/_hamr_
 _hamr_test_generate_messages_check_deps_MotorStatus/fast:
 	cd /home/modlab/Documents/hamr-ros/build && $(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build
 .PHONY : _hamr_test_generate_messages_check_deps_MotorStatus/fast
+
+# Convenience name for target.
+hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule:
+	cd /home/modlab/Documents/hamr-ros/build && $(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule
+.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule
+
+# Convenience name for target.
+_hamr_test_generate_messages_check_deps_VelocityStatus: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule
+.PHONY : _hamr_test_generate_messages_check_deps_VelocityStatus
+
+# fast build rule for target.
+_hamr_test_generate_messages_check_deps_VelocityStatus/fast:
+	cd /home/modlab/Documents/hamr-ros/build && $(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build
+.PHONY : _hamr_test_generate_messages_check_deps_VelocityStatus/fast
 
 # Convenience name for target.
 hamr_test/CMakeFiles/hamr_test_gencpp.dir/rule:
@@ -423,7 +451,9 @@ help:
 	@echo "... depend"
 	@echo "... _hamr_test_generate_messages_check_deps_HamrCommand"
 	@echo "... _hamr_test_generate_messages_check_deps_HamrStatus"
+	@echo "... _hamr_test_generate_messages_check_deps_HoloStatus"
 	@echo "... _hamr_test_generate_messages_check_deps_MotorStatus"
+	@echo "... _hamr_test_generate_messages_check_deps_VelocityStatus"
 	@echo "... edit_cache"
 	@echo "... hamr_test_gencpp"
 	@echo "... hamr_test_generate_messages"

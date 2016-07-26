@@ -1,0 +1,5 @@
+time timestamp
+uint16 looptime
+hamr_interface/MotorStatus left_motor
+hamr_interface/MotorStatus right_motor
+hamr_interface/MotorStatus turret_motor

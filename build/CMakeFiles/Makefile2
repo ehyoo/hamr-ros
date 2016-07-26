@@ -286,710 +286,710 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory hamr_test
+# Directory level rules for directory hamr_interface
 
 # Convenience name for "all" pass in the directory.
-hamr_test/all: hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all
-.PHONY : hamr_test/all
+hamr_interface/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all
+.PHONY : hamr_interface/all
 
 # Convenience name for "clean" pass in the directory.
-hamr_test/clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_gencpp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_generate_messages.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_genlisp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/hamr_test_genpy.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-hamr_test/clean: hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : hamr_test/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/hamr_interface_genpy.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+hamr_interface/clean: hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : hamr_interface/clean
 
 # Convenience name for "preinstall" pass in the directory.
-hamr_test/preinstall:
-.PHONY : hamr_test/preinstall
+hamr_interface/preinstall:
+.PHONY : hamr_interface/preinstall
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir
+# Target rules for target hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/build
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target _hamr_test_generate_messages_check_deps_HamrCommand"
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/all
+	@echo "Built target _hamr_interface_generate_messages_check_deps_HamrCommand"
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/rule
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/rule
 
 # Convenience name for target.
-_hamr_test_generate_messages_check_deps_HamrCommand: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/rule
-.PHONY : _hamr_test_generate_messages_check_deps_HamrCommand
+_hamr_interface_generate_messages_check_deps_HamrCommand: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/rule
+.PHONY : _hamr_interface_generate_messages_check_deps_HamrCommand
 
 # clean rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/clean
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/clean
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/clean
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/clean
+clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir
+# Target rules for target hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/build
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target _hamr_test_generate_messages_check_deps_HamrStatus"
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/all
+	@echo "Built target _hamr_interface_generate_messages_check_deps_HamrStatus"
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/rule
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/rule
 
 # Convenience name for target.
-_hamr_test_generate_messages_check_deps_HamrStatus: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/rule
-.PHONY : _hamr_test_generate_messages_check_deps_HamrStatus
+_hamr_interface_generate_messages_check_deps_HamrStatus: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/rule
+.PHONY : _hamr_interface_generate_messages_check_deps_HamrStatus
 
 # clean rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/clean
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/clean
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/clean
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/clean
+clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir
+# Target rules for target hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target _hamr_test_generate_messages_check_deps_HoloStatus"
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/all
+	@echo "Built target _hamr_interface_generate_messages_check_deps_HoloStatus"
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/rule
 
 # Convenience name for target.
-_hamr_test_generate_messages_check_deps_HoloStatus: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/rule
-.PHONY : _hamr_test_generate_messages_check_deps_HoloStatus
+_hamr_interface_generate_messages_check_deps_HoloStatus: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/rule
+.PHONY : _hamr_interface_generate_messages_check_deps_HoloStatus
 
 # clean rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/clean
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/clean
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/clean
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/clean
+clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir
+# Target rules for target hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target _hamr_test_generate_messages_check_deps_MotorStatus"
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/all
+	@echo "Built target _hamr_interface_generate_messages_check_deps_MotorStatus"
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/rule
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/rule
 
 # Convenience name for target.
-_hamr_test_generate_messages_check_deps_MotorStatus: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/rule
-.PHONY : _hamr_test_generate_messages_check_deps_MotorStatus
+_hamr_interface_generate_messages_check_deps_MotorStatus: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/rule
+.PHONY : _hamr_interface_generate_messages_check_deps_MotorStatus
 
 # clean rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/clean
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/clean
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/clean
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/clean
+clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir
+# Target rules for target hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target _hamr_test_generate_messages_check_deps_VelocityStatus"
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/all
+	@echo "Built target _hamr_interface_generate_messages_check_deps_VelocityStatus"
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/rule
 
 # Convenience name for target.
-_hamr_test_generate_messages_check_deps_VelocityStatus: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/rule
-.PHONY : _hamr_test_generate_messages_check_deps_VelocityStatus
+_hamr_interface_generate_messages_check_deps_VelocityStatus: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/rule
+.PHONY : _hamr_interface_generate_messages_check_deps_VelocityStatus
 
 # clean rule for target.
-hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/clean
-.PHONY : hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/clean
+hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/build.make hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/clean
+.PHONY : hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/clean
+clean: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_gencpp.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_gencpp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_gencpp.dir/all: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_gencpp.dir/build.make hamr_test/CMakeFiles/hamr_test_gencpp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_gencpp.dir/build.make hamr_test/CMakeFiles/hamr_test_gencpp.dir/build
+hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target hamr_test_gencpp"
-.PHONY : hamr_test/CMakeFiles/hamr_test_gencpp.dir/all
+	@echo "Built target hamr_interface_gencpp"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_gencpp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_gencpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_gencpp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/rule
 
 # Convenience name for target.
-hamr_test_gencpp: hamr_test/CMakeFiles/hamr_test_gencpp.dir/rule
-.PHONY : hamr_test_gencpp
+hamr_interface_gencpp: hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/rule
+.PHONY : hamr_interface_gencpp
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_gencpp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_gencpp.dir/build.make hamr_test/CMakeFiles/hamr_test_gencpp.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_gencpp.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_gencpp.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_gencpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_generate_messages.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all: hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages.dir/build
+hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target hamr_test_generate_messages"
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all
+	@echo "Built target hamr_interface_generate_messages"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all
 
 # Include target in all.
-all: hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all
+all: hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 16
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_generate_messages.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/rule
 
 # Convenience name for target.
-hamr_test_generate_messages: hamr_test/CMakeFiles/hamr_test_generate_messages.dir/rule
-.PHONY : hamr_test_generate_messages
+hamr_interface_generate_messages: hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/rule
+.PHONY : hamr_interface_generate_messages
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_generate_messages.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all: hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all: hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles  3 4 5 6 7
-	@echo "Built target hamr_test_generate_messages_cpp"
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all
+	@echo "Built target hamr_interface_generate_messages_cpp"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-hamr_test_generate_messages_cpp: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/rule
-.PHONY : hamr_test_generate_messages_cpp
+hamr_interface_generate_messages_cpp: hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/rule
+.PHONY : hamr_interface_generate_messages_cpp
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_generate_messages_cpp.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all: hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all: hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles  8 9 10 11 12
-	@echo "Built target hamr_test_generate_messages_lisp"
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all
+	@echo "Built target hamr_interface_generate_messages_lisp"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-hamr_test_generate_messages_lisp: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/rule
-.PHONY : hamr_test_generate_messages_lisp
+hamr_interface_generate_messages_lisp: hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/rule
+.PHONY : hamr_interface_generate_messages_lisp
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_MotorStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_VelocityStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all: hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrCommand.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HoloStatus.dir/all
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all: hamr_test/CMakeFiles/_hamr_test_generate_messages_check_deps_HamrStatus.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrCommand.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_VelocityStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_MotorStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HoloStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all: hamr_interface/CMakeFiles/_hamr_interface_generate_messages_check_deps_HamrStatus.dir/all
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all: hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles  13 14 15 16 17 18
-	@echo "Built target hamr_test_generate_messages_py"
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all
+	@echo "Built target hamr_interface_generate_messages_py"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/rule
 
 # Convenience name for target.
-hamr_test_generate_messages_py: hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/rule
-.PHONY : hamr_test_generate_messages_py
+hamr_interface_generate_messages_py: hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/rule
+.PHONY : hamr_interface_generate_messages_py
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/build.make hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_genlisp.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_genlisp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_genlisp.dir/all: hamr_test/CMakeFiles/hamr_test_generate_messages_lisp.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genlisp.dir/build.make hamr_test/CMakeFiles/hamr_test_genlisp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genlisp.dir/build.make hamr_test/CMakeFiles/hamr_test_genlisp.dir/build
+hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages_lisp.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target hamr_test_genlisp"
-.PHONY : hamr_test/CMakeFiles/hamr_test_genlisp.dir/all
+	@echo "Built target hamr_interface_genlisp"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_genlisp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_genlisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_genlisp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/rule
 
 # Convenience name for target.
-hamr_test_genlisp: hamr_test/CMakeFiles/hamr_test_genlisp.dir/rule
-.PHONY : hamr_test_genlisp
+hamr_interface_genlisp: hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/rule
+.PHONY : hamr_interface_genlisp
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_genlisp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genlisp.dir/build.make hamr_test/CMakeFiles/hamr_test_genlisp.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_genlisp.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/build.make hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_genlisp.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_genlisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/hamr_test_genpy.dir
+# Target rules for target hamr_interface/CMakeFiles/hamr_interface_genpy.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/hamr_test_genpy.dir/all: hamr_test/CMakeFiles/hamr_test_generate_messages_py.dir/all
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genpy.dir/build.make hamr_test/CMakeFiles/hamr_test_genpy.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genpy.dir/build.make hamr_test/CMakeFiles/hamr_test_genpy.dir/build
+hamr_interface/CMakeFiles/hamr_interface_genpy.dir/all: hamr_interface/CMakeFiles/hamr_interface_generate_messages_py.dir/all
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_genpy.dir/build.make hamr_interface/CMakeFiles/hamr_interface_genpy.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_genpy.dir/build.make hamr_interface/CMakeFiles/hamr_interface_genpy.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
-	@echo "Built target hamr_test_genpy"
-.PHONY : hamr_test/CMakeFiles/hamr_test_genpy.dir/all
+	@echo "Built target hamr_interface_genpy"
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_genpy.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/hamr_test_genpy.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/hamr_interface_genpy.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/hamr_test_genpy.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/hamr_interface_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/hamr_test_genpy.dir/rule
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_genpy.dir/rule
 
 # Convenience name for target.
-hamr_test_genpy: hamr_test/CMakeFiles/hamr_test_genpy.dir/rule
-.PHONY : hamr_test_genpy
+hamr_interface_genpy: hamr_interface/CMakeFiles/hamr_interface_genpy.dir/rule
+.PHONY : hamr_interface_genpy
 
 # clean rule for target.
-hamr_test/CMakeFiles/hamr_test_genpy.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/hamr_test_genpy.dir/build.make hamr_test/CMakeFiles/hamr_test_genpy.dir/clean
-.PHONY : hamr_test/CMakeFiles/hamr_test_genpy.dir/clean
+hamr_interface/CMakeFiles/hamr_interface_genpy.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/hamr_interface_genpy.dir/build.make hamr_interface/CMakeFiles/hamr_interface_genpy.dir/clean
+.PHONY : hamr_interface/CMakeFiles/hamr_interface_genpy.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/hamr_test_genpy.dir/clean
+clean: hamr_interface/CMakeFiles/hamr_interface_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_cpp"
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+clean: hamr_interface/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_lisp"
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+clean: hamr_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/build
+hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_py"
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/clean
+hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/roscpp_generate_messages_py.dir/clean
+clean: hamr_interface/CMakeFiles/roscpp_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+clean: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+clean: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+clean: hamr_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_cpp"
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+clean: hamr_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_lisp"
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+clean: hamr_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/build
+hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/modlab/Documents/hamr-ros/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_py"
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/all
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/modlab/Documents/hamr-ros/build/CMakeFiles 0
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # clean rule for target.
-clean: hamr_test/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+clean: hamr_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================

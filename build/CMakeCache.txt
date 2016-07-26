@@ -295,6 +295,12 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+hamr_interface_BINARY_DIR:STATIC=/home/modlab/Documents/hamr-ros/build/hamr_interface
+
+//Value Computed by CMake
+hamr_interface_SOURCE_DIR:STATIC=/home/modlab/Documents/hamr-ros/src/hamr_interface
+
+//Value Computed by CMake
 hamr_test_BINARY_DIR:STATIC=/home/modlab/Documents/hamr-ros/build/hamr_test
 
 //Value Computed by CMake

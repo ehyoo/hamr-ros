@@ -1,0 +1,6 @@
+int16 sensed_t_motor_enc_value
+int16 sensed_t_motor_velocity
+int16 sensed_turret_position
+int16 sensed_turret_velocity		
+int16 desired_turret_velocity
+int16 pid_error

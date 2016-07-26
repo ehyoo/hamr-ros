@@ -1,0 +1,8 @@
+prefix=/home/modlab/Documents/hamr-ros/install
+
+Name: hamr_interface
+Description: Description of hamr_interface
+Version: 0.0.0
+Cflags: -I/home/modlab/Documents/hamr-ros/install/include
+Libs: -L/home/modlab/Documents/hamr-ros/install/lib 
+Requires: 

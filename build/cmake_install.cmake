@@ -117,7 +117,7 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/modlab/Documents/hamr-ros/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/modlab/Documents/hamr-ros/build/hamr_test/cmake_install.cmake")
+  INCLUDE("/home/modlab/Documents/hamr-ros/build/hamr_interface/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

@@ -1,0 +1,2 @@
+set(hamr_interface_MESSAGE_FILES "/home/modlab/Documents/hamr-ros/src/hamr_interface/msg/HamrStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_interface/msg/MotorStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_interface/msg/HamrCommand.msg;/home/modlab/Documents/hamr-ros/src/hamr_interface/msg/HoloStatus.msg;/home/modlab/Documents/hamr-ros/src/hamr_interface/msg/VelocityStatus.msg")
+set(hamr_interface_SERVICE_FILES "")

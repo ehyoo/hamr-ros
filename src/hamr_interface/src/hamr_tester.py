@@ -7,6 +7,7 @@
 # This is mostly for debugging purposes.
 import rospy
 from hamr_interface.msg import HamrCommand
+import hamr_controller
 
 class HamrTester():
     def __init__(self):

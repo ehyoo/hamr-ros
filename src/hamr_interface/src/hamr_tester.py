@@ -1,10 +1,17 @@
 #!/usr/bin/env python
-# A test suite for running direct motor control, diff drive, and holonomic 
-# control, as well as PID adjustment for both motor control and holonomic. 
-# Be wary that direct motor control and differential drive depends on
-# the state of the embedded code. By default holonomic control should be the
-# only function that works.
-# This is mostly for debugging purposes.
+"""
+A test suite for running direct motor control, diff drive, and holonomic 
+control, as well as PID adjustment for both motor control and holonomic. 
+
+Be wary that direct motor control and differential drive depends on
+the state of the embedded code. By default holonomic control should be the
+only function that works.
+
+This was the prototype HAMR Interface and is NOT integrated with 
+hamr_controller. 
+
+Use this for debugging.
+"""
 import rospy
 from hamr_interface.msg import HamrCommand
 import hamr_controller

@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+"""
+Controlling the HAMR with the Logitech controller. 
+Be sure to set the params to /dev/input/js[x]
+
+Also use this as an example usage of HamrController.
+"""
 
 import rospy
 from hamr_interface.msg import HamrCommand
@@ -15,24 +21,17 @@ class JoystickController(hc.HamrController):
 
     def callback(self, msg):
         """ Sends x, y, and r commands on joystick command. """
-        print 'hi'
-        # List arranged as: x command, y command, r command
         # x is right joystick left/right, y is right joystick up/down
         # r command is left joystick left/right
-        print msg
-        # Returns a float: left is +, right is -, up is +, down is -.
-
-        self.send_dif_drive(drive_type='r', value=0.1)
-        # self.send_x(msg.axes[2])
-        # self.send_y(msg.axes[3])
-        # self.send_r(msg.axes[4])
-        # if int(msg.buttons[0]) == 0:
-        #     self.kill_motors()
+        # left is +, right is -, up is +, down is -.
+        self.send_x(float(msg.axes[2]) * self.scalar)
+        self.send_y(float(msg.axes[3]) * self.scalar)
+        self.send_r(float(msg.axes[4]) * self.scalar)
+        if int(msg.buttons[0]) == 0: # Press button 1 to kill motors
+            self.kill_motors()
 
 if __name__ == '__main__':
     try:
-        # hc = hamr_controller.HamrController()
         JoystickController()
     except rospy.ROSInterruptException:
-        # hello friend
         pass

@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-
+"""
+hamr_controller.py
+A general class that abstracts commands to the HAMR.
+"""
 import rospy
 from hamr_interface.msg import HamrCommand
 

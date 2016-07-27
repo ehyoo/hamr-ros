@@ -19,11 +19,15 @@ class JoystickController(hc.HamrController):
         # List arranged as: x command, y command, r command
         # x is right joystick left/right, y is right joystick up/down
         # r command is left joystick left/right
-        joystick_input_list = [msg.axes[2], msg.axes[3], msg.axes[0]]
+        print msg
         # Returns a float: left is +, right is -, up is +, down is -.
-        self.send_x(msg.axes[2])
-        self.send_y(msg.axes[3])
-        self.send_r(msg.axes[0])
+
+        self.send_dif_drive(drive_type='r', value=0.1)
+        # self.send_x(msg.axes[2])
+        # self.send_y(msg.axes[3])
+        # self.send_r(msg.axes[4])
+        # if int(msg.buttons[0]) == 0:
+        #     self.kill_motors()
 
 if __name__ == '__main__':
     try:

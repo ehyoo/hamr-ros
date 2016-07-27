@@ -60,14 +60,57 @@ class HamrController():
         """ Sends a holonomic r command """
         self._send_msg('SIG_HOLO_R', value)
 
-    def send_pid(self, drive_side='right', x=0.0, y=0.0, z=0.0):
-        # self._send_msg('')
+    def send_pid(self, drive_side='right', p=0.0, i=0.0, d=0.0):
+        """
+        Adjusts the low level PID
+        drive_side: accepts 'right', 'left', 'turret' 
+        """
+        drive_opt = ['right', 'left', 'turret']
+        if not drive_side.lower() in drive_opt:
+            print 'send_pid: drive_side only accepts right, left, or turret'
+            return
+        if drive_side == 'right':
+            self._send_msg('SIG_R_KP', p)
+            self._send_msg('SIG_R_KI', i)
+            self._send_msg('SIG_R_KD', d)
+        elif drive_side == 'left':
+            self._send_msg('SIG_L_KP', p)
+            self._send_msg('SIG_L_KI', i)
+            self._send_msg('SIG_L_KD', d)
+        elif drive_side == 'turret':
+            self._send_msg('SIG_T_KP', p)
+            self._send_msg('SIG_T_KI', i)
+            self._send_msg('SIG_T_KD', d)
 
-    def send_holo_pid(self, drive_type='', x=0.0, y=0.0, z=0.0):
-        print 'no'
+    def send_holo_pid(self, drive_type='', p=0.0, i=0.0, d=0.0):
+        """
+        Adjusts holonomic PID
+        drive_type accepts 'x', 'y', or 'z'.
+        """
+        if not drive_type.lower() in ['x', 'y', 'r']:
+            print 'send_holo_pid: only accepts x, y, or r'
+            return
+        if drive_type == 'x':
+            self._send_msg('SIG_HOLO_X_KP', p)
+            self._send_msg('SIG_HOLO_X_KI', i)
+            self._send_msg('SIG_HOLO_X_KD', d)
+        elif drive_type == 'y':
+            self._send_msg('SIG_HOLO_Y_KP', p)
+            self._send_msg('SIG_HOLO_Y_KI', i)
+            self._send_msg('SIG_HOLO_Y_KD', d)
+        elif drive_type == 'r':
+            self._send_msg('SIG_R_KP', p)
+            self._send_msg('SIG_R_KI', i)
+            self._send_msg('SIG_R_KD', d)
 
     def send_dif_drive(self, drive_type='', value=0.0):
-        print 'hi'
+        if not drive_type.lower() in ['v', 'r']:
+            print 'send_dif_drive: accepts only v or r'
+            return
+        if drive_type == 'v':
+            self._send_msg('SIG_DD_V', value)
+        elif drive_type == 'r':
+            self._send_msg('SIG_DD_R', value)
 
     def _send_msg(self, msg_type, val):
         """ sends some message of some type and value """
@@ -81,22 +124,9 @@ class HamrController():
             print 'The value of ' + msg_type + ' only accepts numerical values'
 
     def kill_motors(self):
-    	# sends a series of desired messages with value 0
-    	# this is a rather soft stop, so if things go wrong the only real
-    	# emergency full stop is to kill the power.
-    	print 'hello. this is not implemented yet'
-        # msg_type_list = ['SIG_R_MOTOR', 
-    	# 				'SIG_L_MOTOR',
-    	# 				'SIG_T_MOTOR',
-    	# 				'SIG_DD_R',
-    	# 				'SIG_DD_V',
-    	# 				'SIG_HOLO_X',
-    	# 				'SIG_HOLO_Y',
-    	# 				'SIG_HOLO_R']
-    	# msg_list = []
-    	# for i in range(len(msg_type_list)):
-    	# 	arb_msg = HamrCommand()
-    	# 	arb_msg.type = ord(self.val_map.get(msg_type_list[i]))
-    	# 	arb_msg.val = '0'
-    	# 	self.pub.publish(arb_msg)
-     #    print 'killed'
+    	""" Soft software stop by sending 0 to all motors """
+        self.send_x(0.0)
+        self.send_y(0.0)
+        self.send_r(0.0)
+        self.send_dif_drive('v', 0.0)
+        self.send_dif_drive('r', 0.0)

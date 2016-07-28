@@ -27,7 +27,7 @@ class JoystickController(hc.HamrController):
         self.send_x(float(msg.axes[2]) * self.scalar)
         self.send_y(float(msg.axes[3]) * self.scalar)
         self.send_r(float(msg.axes[4]) * self.scalar)
-        if int(msg.buttons[0]) == 0: # Press button 1 to kill motors
+        if int(msg.buttons[0]) != 0: # Press button 1 to kill motors
             self.kill_motors()
 
 if __name__ == '__main__':

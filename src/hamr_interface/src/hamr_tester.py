@@ -299,7 +299,7 @@ class HamrTester():
 
 if __name__ == '__main__':
     try:
-        HamrController().talker()
+        HamrTester().talker()
     except rospy.ROSInterruptException:
         # hello friend
         pass

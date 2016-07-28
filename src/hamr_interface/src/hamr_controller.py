@@ -63,7 +63,7 @@ class HamrController():
         """ Sends a holonomic r command """
         self._send_msg('SIG_HOLO_R', value)
 
-    def send_pid(self, drive_side='right', p=0.0, i=0.0, d=0.0):
+    def send_pid(self, drive_side, p=0.0, i=0.0, d=0.0):
         """
         Adjusts the low level PID
         drive_side: accepts 'right', 'left', 'turret' 
@@ -85,10 +85,10 @@ class HamrController():
             self._send_msg('SIG_T_KI', i)
             self._send_msg('SIG_T_KD', d)
 
-    def send_holo_pid(self, drive_type='', p=0.0, i=0.0, d=0.0):
+    def send_holo_pid(self, drive_type, p=0.0, i=0.0, d=0.0):
         """
         Adjusts holonomic PID
-        drive_type accepts 'x', 'y', or 'z'.
+        drive_type accepts 'x', 'y', or 'r'.
         """
         if not drive_type.lower() in ['x', 'y', 'r']:
             print 'send_holo_pid: only accepts x, y, or r'
@@ -106,7 +106,7 @@ class HamrController():
             self._send_msg('SIG_R_KI', i)
             self._send_msg('SIG_R_KD', d)
 
-    def send_dif_drive(self, drive_type='', value=0.0):
+    def send_dif_drive(self, drive_type, value=0.0):
         if not drive_type.lower() in ['v', 'r']:
             print 'send_dif_drive: accepts only v or r'
             return
